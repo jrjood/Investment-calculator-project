@@ -49,6 +49,7 @@ export default function UserInput({ userData, onChangeUserInput }) {
               onChangeUserInput("duration", event.target.value)
             }
             required
+            placeholder="How many years?"
           />
         </p>
       </div>

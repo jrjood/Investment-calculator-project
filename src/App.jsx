@@ -9,7 +9,7 @@ function App() {
     initialInvestment: 0,
     annualInvestment: 0,
     expectedReturn: 0,
-    duration: 0,
+    duration: null,
   });
 
   function handleChange(inputIdentifier, newValue) {
@@ -26,7 +26,9 @@ function App() {
       {userInput.duration > 0 ? (
         <Result userData={userInput} />
       ) : (
-        <p className="center">Please a duration greater than zero.</p>
+        <p className="center">
+          Please enter a years duration greater than zero.
+        </p>
       )}
     </>
   );
